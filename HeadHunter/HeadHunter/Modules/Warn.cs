@@ -23,9 +23,9 @@ namespace HeadHunter.Modules
             await wanerdmchannel.SendMessageAsync($"You have warned {user}. Remember if he gets 3 warning he might get banned");
 
             WebClient client = new WebClient();
-            string downloadString = client.DownloadString("http://192.168.1.127/discord/setwarn.php?userid=" + user.Id);
+            string downloadString = client.DownloadString("phpscriptshostplace get" + user.Id);
 
-            downloadString = client.DownloadString("http://192.168.1.127/discord/getwarns.php?userid=" + user.Id);
+            downloadString = client.DownloadString("phpscriptshostplace set" + user.Id);
 
             EmbedBuilder builder = new EmbedBuilder();
 
@@ -120,7 +120,7 @@ namespace HeadHunter.Modules
         public async Task GetWarnsAsync(SocketGuildUser user)
         {
             WebClient client = new WebClient();
-            string downloadString = client.DownloadString("http://192.168.1.127/discord/getwarns.php?userid="+user.Id);
+            string downloadString = client.DownloadString("phpscriptshostplace get"+user.Id);
 
             EmbedBuilder builder = new EmbedBuilder();
 
