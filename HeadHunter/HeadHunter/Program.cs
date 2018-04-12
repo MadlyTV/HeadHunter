@@ -28,7 +28,8 @@ namespace HeadHunter
                 .AddSingleton(_commands)
                 .BuildServiceProvider();
 
-            string botToken = "NDMxMTAwNDI5NDUyMDUwNDMy.DaZ2Fg.99n2JR4iBJq4-P7RWfbZnoMSw8o";
+            //Your bot token
+            string botToken = "";
 
             //event subscriptions
             _client.Log += Log;

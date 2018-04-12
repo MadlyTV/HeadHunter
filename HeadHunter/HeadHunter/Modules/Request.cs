@@ -39,7 +39,7 @@ namespace HeadHunter.Modules
         [RequireUserPermission(Discord.GuildPermission.BanMembers)]
         public async Task RequestOwner()
         {
-            var owner = Context.Guild.GetUser(UssefullIDs.OwnerID);
+            var owner = Context.Guild.GetUser(Context.Guild.OwnerId);
             var dmChannel = await owner.GetOrCreateDMChannelAsync();
 
             await Context.Channel.SendMessageAsync("A message has been sent to **MouthTapedGuy** stay put untill he arrives");

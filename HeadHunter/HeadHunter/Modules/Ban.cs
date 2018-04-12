@@ -32,11 +32,11 @@ namespace HeadHunter.Modules
                     var guild = user.Guild;
                     var channel = guild.GetTextChannel(UssefullIDs.BotLogChat);
 
-                    await channel.SendMessageAsync($"**{Context.User}** has banned **{user.Username}** for **{reason}**").ConfigureAwait(false);
+                    await channel.SendMessageAsync($"**{Context.User}** has banned **{user}** for **{reason}**").ConfigureAwait(false);
 
                     await Context.Guild.AddBanAsync(user);
                    
-                    Console.WriteLine($"{Context.User} has banned {user.Username} for {reason}");
+                    Console.WriteLine($"{Context.User} has banned {user} for {reason}");
                 }
             }
         }

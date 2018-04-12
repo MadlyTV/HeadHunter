@@ -153,6 +153,7 @@
     <Compile Include="Modules\Ping.cs" />
     <Compile Include="Modules\Request.cs" />
     <Compile Include="Modules\UssefullIDs.cs" />
+    <Compile Include="Modules\Warn.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
